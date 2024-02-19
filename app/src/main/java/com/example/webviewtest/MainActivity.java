@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         WebSettings webSettings = webView.getSettings();// initiate webView settings
         webSettings.setJavaScriptEnabled(true); // allow webView perform javascript
         webSettings.setDomStorageEnabled(true);
+        webSettings.setMediaPlaybackRequiresUserGesture(false); // allow videos to play unmuted
         webSettings.setAllowFileAccess(true);
         webSettings.setAllowFileAccessFromFileURLs(false); // Enforce CORS on file://
 
